@@ -181,11 +181,17 @@ Chemical-Reactor-Simulator/
 
 │
 ├── app.py
+|
 ├── kinetics.py
+|
 ├── reactor_models.py
+|
 ├── economics.py
+|
 ├── graphs.py
+|
 ├── reactor_info.py
+|
 ├── reports.py
 │
 └── assets/
