@@ -179,21 +179,21 @@ Advantages:
 
 Chemical-Reactor-Simulator/
 
-│
+│<br>
 ├── app.py
 |<br>
 ├── kinetics.py
 |<br>
 ├── reactor_models.py
-|
+|<br>
 ├── economics.py
-|
+|<br>
 ├── graphs.py
-|
+|<br>
 ├── reactor_info.py
-|
+|<br>
 ├── reports.py
-│
+│<br>
 └── assets/
 
 ## 🚀 Installation
