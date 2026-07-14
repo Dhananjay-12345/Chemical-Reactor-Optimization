@@ -685,16 +685,16 @@ if st.button("Run Simulation"):
                 if conversion != 1:
                     req_temp = cstr.TFGC(conversion,activation_energy,frequency_factor)
                 if conversion != 1:
-                    st.metric("REQUIRED TEMPERATURE", f"{req_temp:.2f}")
+                    st.metric("CSTR REQUIRED TEMPERATURE", f"{req_temp:.2f}")
                 else:
-                    st.metric("REQUIRED TEMPERATURE", f"{"very large"}")
+                    st.metric("CSTR REQUIRED TEMPERATURE", f"{"very large"}")
             elif reactor_type == "PFR":
                 if conversion != 1:
                     req_temp = pfr.TFGC(conversion,frequency_factor,activation_energy)
                 if conversion != 1:
-                    st.metric("REQUIRED TEMPERATURE", f"{req_temp:.2f}")
+                    st.metric("PFR REQUIRED TEMPERATURE", f"{req_temp:.2f}")
                 else:
-                    st.metric("REQUIRED TEMPERATURE", f"{"very large"}")
+                    st.metric("PFR REQUIRED TEMPERATURE", f"{"very large"}")
             elif reactor_type == "BOTH" :
                 if conversion != 1:
                     req_temp1 = cstr.TFGC(conversion,activation_energy,frequency_factor)
@@ -703,14 +703,14 @@ if st.button("Run Simulation"):
 
                 with col1:
                     if conversion != 1:
-                        st.metric("REQUIRED TEMPERATURE", f"{req_temp1:.2f}")
+                        st.metric("CSTR REQUIRED TEMPERATURE", f"{req_temp1:.2f}")
                     else:
-                        st.metric("REQUIRED TEMPERATURE", f"{"very large"}")
+                        st.metric("CSTR REQUIRED TEMPERATURE", f"{"very large"}")
                 with col2:
                     if conversion != 1:
-                        st.metric("REQUIRED TEMPERATURE", f"{req_temp2:.2f}")
+                        st.metric("PFR REQUIRED TEMPERATURE", f"{req_temp2:.2f}")
                     else:
-                        st.metric("REQUIRED TEMPERATURE", f"{"very large"}")
+                        st.metric("PFR REQUIRED TEMPERATURE", f"{"very large"}")
 
                     
         elif designx == "Required Volume":
