@@ -181,9 +181,9 @@ Chemical-Reactor-Simulator/
 
 │
 ├── app.py
-|
+|<br>
 ├── kinetics.py
-|
+|<br>
 ├── reactor_models.py
 |
 ├── economics.py
